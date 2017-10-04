@@ -3,6 +3,7 @@ def turn_count(board)
   board.each |spot| do
     turns += (spot == 'X' || spot == 'O' ? 1 : 0)
   end
+  return turns
 end
 
 def current_player(board)
