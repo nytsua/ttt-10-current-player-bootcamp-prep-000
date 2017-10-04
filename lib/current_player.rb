@@ -1,6 +1,6 @@
 def turn_count(board)
   turns = 0
-  board.each |spot| do
+  board.each do |spot|
     turns += (spot == 'X' || spot == 'O' ? 1 : 0)
   end
   return turns
